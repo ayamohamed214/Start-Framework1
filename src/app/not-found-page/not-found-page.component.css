@@ -1,0 +1,13 @@
+.notFound{
+  height: 90vh;
+}
+
+.btncloro{
+color: white;
+  background-color:  #1abc9c;;
+}
+.btncloro:hover{
+background-color: white;
+border:2px solid  #1abc9c; ;
+color: #000;
+}

@@ -1,0 +1,33 @@
+<section>
+  <div
+    class="PORTFOLIO container mt-5 pt-5 d-flex justify-content-center flex-column align-items-center"
+  >
+    <h2 class="text-center">PORTFOLIO COMPONENT</h2>
+    <br />
+    <span> <i class="fa-solid fa-star fa-xl"></i> </span>
+
+    <div class="row g-5 py-5">
+      <div class="col-md-4" *ngFor="let img of images">
+        <div class="layer rounded-4">
+          <div class="poltfolio-img" (click)="openImg($event)">
+            <img [src]="img" class="w-100 rounded-4" />
+            <div class="poltfolio-icon" [attr.data-src]="img">
+              <i class="fa-solid fa-plus fa-8x" [attr.data-src]="img"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    (click)="closeImg()"
+    class="portfolioLayer d-flex justify-content-center align-items-center"
+    [class]="isValid == true ? 'd-flex' : 'd-none'"
+  >
+    <div
+      [ngStyle]="{ 'background-image': 'url(' + curentSrc + ')' }"
+      class="portfolioimg"
+    ></div>
+  </div>
+</section>

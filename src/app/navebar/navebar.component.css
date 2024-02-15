@@ -1,0 +1,22 @@
+.nav{
+    background-color: #2C3E50;
+    position:fixed ;
+    top: 0;
+    z-index: 999999;
+    color: #fff;
+}
+.link{
+
+    color: #fff;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #fff;
+
+}
+
+.activee{
+border-radius: 8%;
+    background-color: #1abc9c;
+    color: white;
+    font-size: large;
+}

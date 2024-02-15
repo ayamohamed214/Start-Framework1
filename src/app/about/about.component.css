@@ -1,0 +1,29 @@
+.about {
+  background-color: #1abc9c;
+  height: 95vh;
+  color: white;
+}
+span{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+span:after {
+    display: inline-block;
+    margin: 0 0 8px 20px;
+    height: 5px;
+    content: " ";
+    text-shadow: none;
+    background-color: #fff;
+    width: 5rem;
+}
+span:before {
+    display: inline-block;
+    margin: 0 20px 8px 0;
+    height: 5px;
+    content: " ";
+    text-shadow: none;
+    background-color: #fff;
+    width: 5rem;
+}
